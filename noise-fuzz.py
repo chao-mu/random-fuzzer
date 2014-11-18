@@ -46,7 +46,7 @@ def main():
   )
   arg_parser.add_argument(
     "--max-response-length",
-    help="amount to truncate server response to, you may only get a packet's worth",
+    help="amount to truncate server response to",
     type=int,
     default=1000000
   )
