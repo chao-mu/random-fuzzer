@@ -129,7 +129,7 @@ def read_socket(soc, max_length):
       if err_code in (errno.EAGAIN, errno.EWOULDBLOCK):
         break
 
-      # If the connection closed, we may still have data
+      # The connection closed.
       if err_code in (errno.ECONNRESET,):
         break
 
