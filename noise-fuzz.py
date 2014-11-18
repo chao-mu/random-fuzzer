@@ -46,13 +46,13 @@ def main():
   )
   arg_parser.add_argument(
     "--max-response-length",
-    help="amount to truncate server response to",
+    help="amount to truncate server response to, you may only get a packet",
     type=int,
     default=1000000
   )
   arg_parser.add_argument(
     "--recv-timeout",
-    help="how long in seconds to wait for the first byte of response",
+    help="how long in seconds to wait for the response",
     type=float,
     default=1
   )

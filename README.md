@@ -10,7 +10,6 @@ There is a lot of room for improvement, if you are interested in furthering the 
 Usage
 =====
 ```
-$ python3 noise-fuzz.py --help
 usage: noise-fuzz.py [-h] [--max-length MAX_LENGTH] [--min-length MIN_LENGTH]
                      [--find-response] [--response-file RESPONSE_FILE]
                      [--max-response-length MAX_RESPONSE_LENGTH]
@@ -34,8 +33,8 @@ optional arguments:
                         the file to write a truncated response to when using
                         --find-response
   --max-response-length MAX_RESPONSE_LENGTH
-                        amount to truncate server response to
+                        amount to truncate server response to, you may only
+                        get a packet
   --recv-timeout RECV_TIMEOUT
-                        how long in seconds to wait for the first byte of
-                        response
+                        how long in seconds to wait for the response
 ```
